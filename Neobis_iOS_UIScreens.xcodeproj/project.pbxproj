@@ -9,13 +9,13 @@
 /* Begin PBXBuildFile section */
 		C659A80529DD75A20020AD11 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C659A80429DD75A20020AD11 /* AppDelegate.swift */; };
 		C659A80729DD75A20020AD11 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C659A80629DD75A20020AD11 /* SceneDelegate.swift */; };
-		C659A80929DD75A20020AD11 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C659A80829DD75A20020AD11 /* ViewController.swift */; };
-		C659A80C29DD75A20020AD11 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C659A80A29DD75A20020AD11 /* Main.storyboard */; };
+		C659A80929DD75A20020AD11 /* WeatherMainScreenVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C659A80829DD75A20020AD11 /* WeatherMainScreenVC.swift */; };
 		C659A80E29DD75A30020AD11 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C659A80D29DD75A30020AD11 /* Assets.xcassets */; };
 		C659A81129DD75A30020AD11 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C659A80F29DD75A30020AD11 /* LaunchScreen.storyboard */; };
 		C659A81C29DD75A30020AD11 /* Neobis_iOS_UIScreensTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C659A81B29DD75A30020AD11 /* Neobis_iOS_UIScreensTests.swift */; };
 		C659A82629DD75A30020AD11 /* Neobis_iOS_UIScreensUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C659A82529DD75A30020AD11 /* Neobis_iOS_UIScreensUITests.swift */; };
 		C659A82829DD75A30020AD11 /* Neobis_iOS_UIScreensUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C659A82729DD75A30020AD11 /* Neobis_iOS_UIScreensUITestsLaunchTests.swift */; };
+		C659A83929DD76AD0020AD11 /* NavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C659A83829DD76AD0020AD11 /* NavigationController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,8 +39,7 @@
 		C659A80129DD75A20020AD11 /* Neobis_iOS_UIScreens.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Neobis_iOS_UIScreens.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C659A80429DD75A20020AD11 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C659A80629DD75A20020AD11 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		C659A80829DD75A20020AD11 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		C659A80B29DD75A20020AD11 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		C659A80829DD75A20020AD11 /* WeatherMainScreenVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherMainScreenVC.swift; sourceTree = "<group>"; };
 		C659A80D29DD75A30020AD11 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C659A81029DD75A30020AD11 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C659A81229DD75A30020AD11 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -49,6 +48,7 @@
 		C659A82129DD75A30020AD11 /* Neobis_iOS_UIScreensUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Neobis_iOS_UIScreensUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C659A82529DD75A30020AD11 /* Neobis_iOS_UIScreensUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Neobis_iOS_UIScreensUITests.swift; sourceTree = "<group>"; };
 		C659A82729DD75A30020AD11 /* Neobis_iOS_UIScreensUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Neobis_iOS_UIScreensUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		C659A83829DD76AD0020AD11 /* NavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,6 +80,7 @@
 			isa = PBXGroup;
 			children = (
 				C659A80329DD75A20020AD11 /* Neobis_iOS_UIScreens */,
+				C659A83629DD761D0020AD11 /* Resources */,
 				C659A81A29DD75A30020AD11 /* Neobis_iOS_UIScreensTests */,
 				C659A82429DD75A30020AD11 /* Neobis_iOS_UIScreensUITests */,
 				C659A80229DD75A20020AD11 /* Products */,
@@ -99,13 +100,9 @@
 		C659A80329DD75A20020AD11 /* Neobis_iOS_UIScreens */ = {
 			isa = PBXGroup;
 			children = (
-				C659A80429DD75A20020AD11 /* AppDelegate.swift */,
-				C659A80629DD75A20020AD11 /* SceneDelegate.swift */,
-				C659A80829DD75A20020AD11 /* ViewController.swift */,
-				C659A80A29DD75A20020AD11 /* Main.storyboard */,
-				C659A80D29DD75A30020AD11 /* Assets.xcassets */,
-				C659A80F29DD75A30020AD11 /* LaunchScreen.storyboard */,
-				C659A81229DD75A30020AD11 /* Info.plist */,
+				C659A83729DD76A30020AD11 /* Navigation */,
+				C659A83529DD75F50020AD11 /* Screens */,
+				C659A83429DD75E00020AD11 /* Application */,
 			);
 			path = Neobis_iOS_UIScreens;
 			sourceTree = "<group>";
@@ -125,6 +122,41 @@
 				C659A82729DD75A30020AD11 /* Neobis_iOS_UIScreensUITestsLaunchTests.swift */,
 			);
 			path = Neobis_iOS_UIScreensUITests;
+			sourceTree = "<group>";
+		};
+		C659A83429DD75E00020AD11 /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				C659A80429DD75A20020AD11 /* AppDelegate.swift */,
+				C659A80629DD75A20020AD11 /* SceneDelegate.swift */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		C659A83529DD75F50020AD11 /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				C659A80829DD75A20020AD11 /* WeatherMainScreenVC.swift */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		C659A83629DD761D0020AD11 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				C659A80D29DD75A30020AD11 /* Assets.xcassets */,
+				C659A80F29DD75A30020AD11 /* LaunchScreen.storyboard */,
+				C659A81229DD75A30020AD11 /* Info.plist */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		C659A83729DD76A30020AD11 /* Navigation */ = {
+			isa = PBXGroup;
+			children = (
+				C659A83829DD76AD0020AD11 /* NavigationController.swift */,
+			);
+			path = Navigation;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -233,7 +265,6 @@
 			files = (
 				C659A81129DD75A30020AD11 /* LaunchScreen.storyboard in Resources */,
 				C659A80E29DD75A30020AD11 /* Assets.xcassets in Resources */,
-				C659A80C29DD75A20020AD11 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -258,7 +289,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C659A80929DD75A20020AD11 /* ViewController.swift in Sources */,
+				C659A80929DD75A20020AD11 /* WeatherMainScreenVC.swift in Sources */,
+				C659A83929DD76AD0020AD11 /* NavigationController.swift in Sources */,
 				C659A80529DD75A20020AD11 /* AppDelegate.swift in Sources */,
 				C659A80729DD75A20020AD11 /* SceneDelegate.swift in Sources */,
 			);
@@ -297,14 +329,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		C659A80A29DD75A20020AD11 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				C659A80B29DD75A20020AD11 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		C659A80F29DD75A30020AD11 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -438,10 +462,9 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = Neobis_iOS_UIScreens/Info.plist;
+				INFOPLIST_FILE = Resources/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -465,10 +488,9 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = Neobis_iOS_UIScreens/Info.plist;
+				INFOPLIST_FILE = Resources/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
