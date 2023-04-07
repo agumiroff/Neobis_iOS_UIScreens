@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2683B0BB1CA48B54C0A95C63 /* Pods_Neobis_iOS_UIScreens_Neobis_iOS_UIScreensUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FEB513C69C4EB45B6A1F1A1F /* Pods_Neobis_iOS_UIScreens_Neobis_iOS_UIScreensUITests.framework */; };
+		479DEE93518E972E0BC9D50A /* Pods_Neobis_iOS_UIScreens.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D1D03901E7F59C4E28A06DF /* Pods_Neobis_iOS_UIScreens.framework */; };
+		C63F79AF29E045320055E2FE /* Sizes.swift in Sources */ = {isa = PBXBuildFile; fileRef = C63F79AE29E045320055E2FE /* Sizes.swift */; };
+		C63F79B129E05C6B0055E2FE /* WeatherWeekScreenVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C63F79B029E05C6B0055E2FE /* WeatherWeekScreenVC.swift */; };
+		C63F79B429E05D1F0055E2FE /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = C63F79B329E05D1F0055E2FE /* Router.swift */; };
 		C659A80529DD75A20020AD11 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C659A80429DD75A20020AD11 /* AppDelegate.swift */; };
 		C659A80729DD75A20020AD11 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C659A80629DD75A20020AD11 /* SceneDelegate.swift */; };
 		C659A80929DD75A20020AD11 /* WeatherMainScreenVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C659A80829DD75A20020AD11 /* WeatherMainScreenVC.swift */; };
@@ -16,6 +21,33 @@
 		C659A82629DD75A30020AD11 /* Neobis_iOS_UIScreensUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C659A82529DD75A30020AD11 /* Neobis_iOS_UIScreensUITests.swift */; };
 		C659A82829DD75A30020AD11 /* Neobis_iOS_UIScreensUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C659A82729DD75A30020AD11 /* Neobis_iOS_UIScreensUITestsLaunchTests.swift */; };
 		C659A83929DD76AD0020AD11 /* NavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C659A83829DD76AD0020AD11 /* NavigationController.swift */; };
+		C6DFC81A29DEDB67008B072C /* StackView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6DFC81929DEDB67008B072C /* StackView+Extension.swift */; };
+		C6DFC83829DEE56F008B072C /* Overpass-Italic-VariableFont_wght.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C6DFC82129DEE56F008B072C /* Overpass-Italic-VariableFont_wght.ttf */; };
+		C6DFC83929DEE56F008B072C /* Overpass-ExtraLight.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C6DFC82329DEE56F008B072C /* Overpass-ExtraLight.ttf */; };
+		C6DFC83A29DEE56F008B072C /* Overpass-ThinItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C6DFC82429DEE56F008B072C /* Overpass-ThinItalic.ttf */; };
+		C6DFC83B29DEE56F008B072C /* Overpass-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C6DFC82529DEE56F008B072C /* Overpass-BoldItalic.ttf */; };
+		C6DFC83C29DEE56F008B072C /* Overpass-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C6DFC82629DEE56F008B072C /* Overpass-Medium.ttf */; };
+		C6DFC83D29DEE56F008B072C /* Overpass-LightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C6DFC82729DEE56F008B072C /* Overpass-LightItalic.ttf */; };
+		C6DFC83E29DEE56F008B072C /* Overpass-ExtraBoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C6DFC82829DEE56F008B072C /* Overpass-ExtraBoldItalic.ttf */; };
+		C6DFC83F29DEE56F008B072C /* Overpass-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C6DFC82929DEE56F008B072C /* Overpass-Light.ttf */; };
+		C6DFC84029DEE56F008B072C /* Overpass-BlackItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C6DFC82A29DEE56F008B072C /* Overpass-BlackItalic.ttf */; };
+		C6DFC84129DEE56F008B072C /* Overpass-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C6DFC82B29DEE56F008B072C /* Overpass-Regular.ttf */; };
+		C6DFC84229DEE56F008B072C /* Overpass-SemiBoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C6DFC82C29DEE56F008B072C /* Overpass-SemiBoldItalic.ttf */; };
+		C6DFC84329DEE56F008B072C /* Overpass-ExtraLightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C6DFC82D29DEE56F008B072C /* Overpass-ExtraLightItalic.ttf */; };
+		C6DFC84429DEE56F008B072C /* Overpass-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C6DFC82E29DEE56F008B072C /* Overpass-Black.ttf */; };
+		C6DFC84529DEE56F008B072C /* Overpass-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C6DFC82F29DEE56F008B072C /* Overpass-SemiBold.ttf */; };
+		C6DFC84629DEE56F008B072C /* Overpass-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C6DFC83029DEE56F008B072C /* Overpass-Bold.ttf */; };
+		C6DFC84729DEE56F008B072C /* Overpass-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C6DFC83129DEE56F008B072C /* Overpass-Italic.ttf */; };
+		C6DFC84829DEE56F008B072C /* Overpass-ExtraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C6DFC83229DEE56F008B072C /* Overpass-ExtraBold.ttf */; };
+		C6DFC84929DEE56F008B072C /* Overpass-MediumItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C6DFC83329DEE56F008B072C /* Overpass-MediumItalic.ttf */; };
+		C6DFC84A29DEE56F008B072C /* Overpass-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C6DFC83429DEE56F008B072C /* Overpass-Thin.ttf */; };
+		C6DFC84B29DEE56F008B072C /* OFL.txt in Resources */ = {isa = PBXBuildFile; fileRef = C6DFC83529DEE56F008B072C /* OFL.txt */; };
+		C6DFC84C29DEE56F008B072C /* README.txt in Resources */ = {isa = PBXBuildFile; fileRef = C6DFC83629DEE56F008B072C /* README.txt */; };
+		C6DFC84D29DEE56F008B072C /* Overpass-VariableFont_wght.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C6DFC83729DEE56F008B072C /* Overpass-VariableFont_wght.ttf */; };
+		C6DFC85029DEED17008B072C /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6DFC84F29DEED17008B072C /* UIColor+Extension.swift */; };
+		C6DFC85229DEFFF6008B072C /* InformationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6DFC85129DEFFF6008B072C /* InformationView.swift */; };
+		C6DFC85429DF2D8D008B072C /* Constraints.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6DFC85329DF2D8D008B072C /* Constraints.swift */; };
+		D2702F66D60B4089FBB4D856 /* Pods_Neobis_iOS_UIScreensTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C277A361504644148A3873A7 /* Pods_Neobis_iOS_UIScreensTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +68,17 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		09546C2ACEBAE6D40C326C50 /* Pods-Neobis_iOS_UIScreens-Neobis_iOS_UIScreensUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Neobis_iOS_UIScreens-Neobis_iOS_UIScreensUITests.debug.xcconfig"; path = "Target Support Files/Pods-Neobis_iOS_UIScreens-Neobis_iOS_UIScreensUITests/Pods-Neobis_iOS_UIScreens-Neobis_iOS_UIScreensUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		09F05CFAA2DBBE51F6025730 /* Pods-Neobis_iOS_UIScreens.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Neobis_iOS_UIScreens.debug.xcconfig"; path = "Target Support Files/Pods-Neobis_iOS_UIScreens/Pods-Neobis_iOS_UIScreens.debug.xcconfig"; sourceTree = "<group>"; };
+		1967399FC0EAD5A53EA0333C /* Pods-Neobis_iOS_UIScreens.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Neobis_iOS_UIScreens.release.xcconfig"; path = "Target Support Files/Pods-Neobis_iOS_UIScreens/Pods-Neobis_iOS_UIScreens.release.xcconfig"; sourceTree = "<group>"; };
+		1D1D03901E7F59C4E28A06DF /* Pods_Neobis_iOS_UIScreens.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Neobis_iOS_UIScreens.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5394A8F5E1352AD087DDB441 /* Pods-Neobis_iOS_UIScreens-Neobis_iOS_UIScreensUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Neobis_iOS_UIScreens-Neobis_iOS_UIScreensUITests.release.xcconfig"; path = "Target Support Files/Pods-Neobis_iOS_UIScreens-Neobis_iOS_UIScreensUITests/Pods-Neobis_iOS_UIScreens-Neobis_iOS_UIScreensUITests.release.xcconfig"; sourceTree = "<group>"; };
+		8396006C8E3E470588C2CC1F /* Pods-Neobis_iOS_UIScreensTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Neobis_iOS_UIScreensTests.release.xcconfig"; path = "Target Support Files/Pods-Neobis_iOS_UIScreensTests/Pods-Neobis_iOS_UIScreensTests.release.xcconfig"; sourceTree = "<group>"; };
+		900A3941FFA699B8563AE4EB /* Pods-Neobis_iOS_UIScreensTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Neobis_iOS_UIScreensTests.debug.xcconfig"; path = "Target Support Files/Pods-Neobis_iOS_UIScreensTests/Pods-Neobis_iOS_UIScreensTests.debug.xcconfig"; sourceTree = "<group>"; };
+		C277A361504644148A3873A7 /* Pods_Neobis_iOS_UIScreensTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Neobis_iOS_UIScreensTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C63F79AE29E045320055E2FE /* Sizes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sizes.swift; sourceTree = "<group>"; };
+		C63F79B029E05C6B0055E2FE /* WeatherWeekScreenVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherWeekScreenVC.swift; sourceTree = "<group>"; };
+		C63F79B329E05D1F0055E2FE /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
 		C659A80129DD75A20020AD11 /* Neobis_iOS_UIScreens.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Neobis_iOS_UIScreens.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C659A80429DD75A20020AD11 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C659A80629DD75A20020AD11 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -49,6 +92,33 @@
 		C659A82529DD75A30020AD11 /* Neobis_iOS_UIScreensUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Neobis_iOS_UIScreensUITests.swift; sourceTree = "<group>"; };
 		C659A82729DD75A30020AD11 /* Neobis_iOS_UIScreensUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Neobis_iOS_UIScreensUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		C659A83829DD76AD0020AD11 /* NavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationController.swift; sourceTree = "<group>"; };
+		C6DFC81929DEDB67008B072C /* StackView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "StackView+Extension.swift"; sourceTree = "<group>"; };
+		C6DFC82129DEE56F008B072C /* Overpass-Italic-VariableFont_wght.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Overpass-Italic-VariableFont_wght.ttf"; sourceTree = "<group>"; };
+		C6DFC82329DEE56F008B072C /* Overpass-ExtraLight.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Overpass-ExtraLight.ttf"; sourceTree = "<group>"; };
+		C6DFC82429DEE56F008B072C /* Overpass-ThinItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Overpass-ThinItalic.ttf"; sourceTree = "<group>"; };
+		C6DFC82529DEE56F008B072C /* Overpass-BoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Overpass-BoldItalic.ttf"; sourceTree = "<group>"; };
+		C6DFC82629DEE56F008B072C /* Overpass-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Overpass-Medium.ttf"; sourceTree = "<group>"; };
+		C6DFC82729DEE56F008B072C /* Overpass-LightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Overpass-LightItalic.ttf"; sourceTree = "<group>"; };
+		C6DFC82829DEE56F008B072C /* Overpass-ExtraBoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Overpass-ExtraBoldItalic.ttf"; sourceTree = "<group>"; };
+		C6DFC82929DEE56F008B072C /* Overpass-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Overpass-Light.ttf"; sourceTree = "<group>"; };
+		C6DFC82A29DEE56F008B072C /* Overpass-BlackItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Overpass-BlackItalic.ttf"; sourceTree = "<group>"; };
+		C6DFC82B29DEE56F008B072C /* Overpass-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Overpass-Regular.ttf"; sourceTree = "<group>"; };
+		C6DFC82C29DEE56F008B072C /* Overpass-SemiBoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Overpass-SemiBoldItalic.ttf"; sourceTree = "<group>"; };
+		C6DFC82D29DEE56F008B072C /* Overpass-ExtraLightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Overpass-ExtraLightItalic.ttf"; sourceTree = "<group>"; };
+		C6DFC82E29DEE56F008B072C /* Overpass-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Overpass-Black.ttf"; sourceTree = "<group>"; };
+		C6DFC82F29DEE56F008B072C /* Overpass-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Overpass-SemiBold.ttf"; sourceTree = "<group>"; };
+		C6DFC83029DEE56F008B072C /* Overpass-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Overpass-Bold.ttf"; sourceTree = "<group>"; };
+		C6DFC83129DEE56F008B072C /* Overpass-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Overpass-Italic.ttf"; sourceTree = "<group>"; };
+		C6DFC83229DEE56F008B072C /* Overpass-ExtraBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Overpass-ExtraBold.ttf"; sourceTree = "<group>"; };
+		C6DFC83329DEE56F008B072C /* Overpass-MediumItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Overpass-MediumItalic.ttf"; sourceTree = "<group>"; };
+		C6DFC83429DEE56F008B072C /* Overpass-Thin.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Overpass-Thin.ttf"; sourceTree = "<group>"; };
+		C6DFC83529DEE56F008B072C /* OFL.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = OFL.txt; sourceTree = "<group>"; };
+		C6DFC83629DEE56F008B072C /* README.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.txt; sourceTree = "<group>"; };
+		C6DFC83729DEE56F008B072C /* Overpass-VariableFont_wght.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Overpass-VariableFont_wght.ttf"; sourceTree = "<group>"; };
+		C6DFC84F29DEED17008B072C /* UIColor+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
+		C6DFC85129DEFFF6008B072C /* InformationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InformationView.swift; sourceTree = "<group>"; };
+		C6DFC85329DF2D8D008B072C /* Constraints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constraints.swift; sourceTree = "<group>"; };
+		FEB513C69C4EB45B6A1F1A1F /* Pods_Neobis_iOS_UIScreens_Neobis_iOS_UIScreensUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Neobis_iOS_UIScreens_Neobis_iOS_UIScreensUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +126,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				479DEE93518E972E0BC9D50A /* Pods_Neobis_iOS_UIScreens.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +134,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D2702F66D60B4089FBB4D856 /* Pods_Neobis_iOS_UIScreensTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -70,12 +142,44 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2683B0BB1CA48B54C0A95C63 /* Pods_Neobis_iOS_UIScreens_Neobis_iOS_UIScreensUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9CE0B699D96676CA794A613C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1D1D03901E7F59C4E28A06DF /* Pods_Neobis_iOS_UIScreens.framework */,
+				FEB513C69C4EB45B6A1F1A1F /* Pods_Neobis_iOS_UIScreens_Neobis_iOS_UIScreensUITests.framework */,
+				C277A361504644148A3873A7 /* Pods_Neobis_iOS_UIScreensTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C61D5CE6341233242763F24E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				09F05CFAA2DBBE51F6025730 /* Pods-Neobis_iOS_UIScreens.debug.xcconfig */,
+				1967399FC0EAD5A53EA0333C /* Pods-Neobis_iOS_UIScreens.release.xcconfig */,
+				09546C2ACEBAE6D40C326C50 /* Pods-Neobis_iOS_UIScreens-Neobis_iOS_UIScreensUITests.debug.xcconfig */,
+				5394A8F5E1352AD087DDB441 /* Pods-Neobis_iOS_UIScreens-Neobis_iOS_UIScreensUITests.release.xcconfig */,
+				900A3941FFA699B8563AE4EB /* Pods-Neobis_iOS_UIScreensTests.debug.xcconfig */,
+				8396006C8E3E470588C2CC1F /* Pods-Neobis_iOS_UIScreensTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		C63F79B229E05D180055E2FE /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				C63F79B329E05D1F0055E2FE /* Router.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
 		C659A7F829DD75A20020AD11 = {
 			isa = PBXGroup;
 			children = (
@@ -84,6 +188,8 @@
 				C659A81A29DD75A30020AD11 /* Neobis_iOS_UIScreensTests */,
 				C659A82429DD75A30020AD11 /* Neobis_iOS_UIScreensUITests */,
 				C659A80229DD75A20020AD11 /* Products */,
+				C61D5CE6341233242763F24E /* Pods */,
+				9CE0B699D96676CA794A613C /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -100,8 +206,9 @@
 		C659A80329DD75A20020AD11 /* Neobis_iOS_UIScreens */ = {
 			isa = PBXGroup;
 			children = (
+				C63F79B229E05D180055E2FE /* Router */,
+				C6DFC81329DDE4F4008B072C /* UI */,
 				C659A83729DD76A30020AD11 /* Navigation */,
-				C659A83529DD75F50020AD11 /* Screens */,
 				C659A83429DD75E00020AD11 /* Application */,
 			);
 			path = Neobis_iOS_UIScreens;
@@ -137,6 +244,8 @@
 			isa = PBXGroup;
 			children = (
 				C659A80829DD75A20020AD11 /* WeatherMainScreenVC.swift */,
+				C6DFC81429DDE4F7008B072C /* Custom */,
+				C63F79B029E05C6B0055E2FE /* WeatherWeekScreenVC.swift */,
 			);
 			path = Screens;
 			sourceTree = "<group>";
@@ -159,6 +268,80 @@
 			path = Navigation;
 			sourceTree = "<group>";
 		};
+		C6DFC81329DDE4F4008B072C /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				C6DFC81729DEDB4C008B072C /* Extensions */,
+				C659A83529DD75F50020AD11 /* Screens */,
+				C6DFC81B29DEE2B7008B072C /* Fonts */,
+				C6DFC85329DF2D8D008B072C /* Constraints.swift */,
+				C63F79AE29E045320055E2FE /* Sizes.swift */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		C6DFC81429DDE4F7008B072C /* Custom */ = {
+			isa = PBXGroup;
+			children = (
+				C6DFC85129DEFFF6008B072C /* InformationView.swift */,
+			);
+			path = Custom;
+			sourceTree = "<group>";
+		};
+		C6DFC81729DEDB4C008B072C /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				C6DFC81929DEDB67008B072C /* StackView+Extension.swift */,
+				C6DFC84F29DEED17008B072C /* UIColor+Extension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		C6DFC81B29DEE2B7008B072C /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				C6DFC82029DEE56F008B072C /* Overpass */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		C6DFC82029DEE56F008B072C /* Overpass */ = {
+			isa = PBXGroup;
+			children = (
+				C6DFC82129DEE56F008B072C /* Overpass-Italic-VariableFont_wght.ttf */,
+				C6DFC82229DEE56F008B072C /* static */,
+				C6DFC83529DEE56F008B072C /* OFL.txt */,
+				C6DFC83629DEE56F008B072C /* README.txt */,
+				C6DFC83729DEE56F008B072C /* Overpass-VariableFont_wght.ttf */,
+			);
+			path = Overpass;
+			sourceTree = "<group>";
+		};
+		C6DFC82229DEE56F008B072C /* static */ = {
+			isa = PBXGroup;
+			children = (
+				C6DFC82329DEE56F008B072C /* Overpass-ExtraLight.ttf */,
+				C6DFC82429DEE56F008B072C /* Overpass-ThinItalic.ttf */,
+				C6DFC82529DEE56F008B072C /* Overpass-BoldItalic.ttf */,
+				C6DFC82629DEE56F008B072C /* Overpass-Medium.ttf */,
+				C6DFC82729DEE56F008B072C /* Overpass-LightItalic.ttf */,
+				C6DFC82829DEE56F008B072C /* Overpass-ExtraBoldItalic.ttf */,
+				C6DFC82929DEE56F008B072C /* Overpass-Light.ttf */,
+				C6DFC82A29DEE56F008B072C /* Overpass-BlackItalic.ttf */,
+				C6DFC82B29DEE56F008B072C /* Overpass-Regular.ttf */,
+				C6DFC82C29DEE56F008B072C /* Overpass-SemiBoldItalic.ttf */,
+				C6DFC82D29DEE56F008B072C /* Overpass-ExtraLightItalic.ttf */,
+				C6DFC82E29DEE56F008B072C /* Overpass-Black.ttf */,
+				C6DFC82F29DEE56F008B072C /* Overpass-SemiBold.ttf */,
+				C6DFC83029DEE56F008B072C /* Overpass-Bold.ttf */,
+				C6DFC83129DEE56F008B072C /* Overpass-Italic.ttf */,
+				C6DFC83229DEE56F008B072C /* Overpass-ExtraBold.ttf */,
+				C6DFC83329DEE56F008B072C /* Overpass-MediumItalic.ttf */,
+				C6DFC83429DEE56F008B072C /* Overpass-Thin.ttf */,
+			);
+			path = static;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -166,9 +349,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C659A82B29DD75A30020AD11 /* Build configuration list for PBXNativeTarget "Neobis_iOS_UIScreens" */;
 			buildPhases = (
+				40EEC8F8BBEBED15426C2BAC /* [CP] Check Pods Manifest.lock */,
 				C659A7FD29DD75A20020AD11 /* Sources */,
 				C659A7FE29DD75A20020AD11 /* Frameworks */,
 				C659A7FF29DD75A20020AD11 /* Resources */,
+				834D555F0463ED2D1120383F /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -183,6 +368,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C659A82E29DD75A30020AD11 /* Build configuration list for PBXNativeTarget "Neobis_iOS_UIScreensTests" */;
 			buildPhases = (
+				938EB19AB557EB48B9DBD83A /* [CP] Check Pods Manifest.lock */,
 				C659A81329DD75A30020AD11 /* Sources */,
 				C659A81429DD75A30020AD11 /* Frameworks */,
 				C659A81529DD75A30020AD11 /* Resources */,
@@ -201,9 +387,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C659A83129DD75A30020AD11 /* Build configuration list for PBXNativeTarget "Neobis_iOS_UIScreensUITests" */;
 			buildPhases = (
+				90F8D7ECFBBEE0BD364E549E /* [CP] Check Pods Manifest.lock */,
 				C659A81D29DD75A30020AD11 /* Sources */,
 				C659A81E29DD75A30020AD11 /* Frameworks */,
 				C659A81F29DD75A30020AD11 /* Resources */,
+				C5D85B24F171DE5D676B7F6A /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -263,8 +451,30 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C6DFC84D29DEE56F008B072C /* Overpass-VariableFont_wght.ttf in Resources */,
+				C6DFC84529DEE56F008B072C /* Overpass-SemiBold.ttf in Resources */,
+				C6DFC84A29DEE56F008B072C /* Overpass-Thin.ttf in Resources */,
 				C659A81129DD75A30020AD11 /* LaunchScreen.storyboard in Resources */,
 				C659A80E29DD75A30020AD11 /* Assets.xcassets in Resources */,
+				C6DFC84429DEE56F008B072C /* Overpass-Black.ttf in Resources */,
+				C6DFC84929DEE56F008B072C /* Overpass-MediumItalic.ttf in Resources */,
+				C6DFC84C29DEE56F008B072C /* README.txt in Resources */,
+				C6DFC84229DEE56F008B072C /* Overpass-SemiBoldItalic.ttf in Resources */,
+				C6DFC84329DEE56F008B072C /* Overpass-ExtraLightItalic.ttf in Resources */,
+				C6DFC83F29DEE56F008B072C /* Overpass-Light.ttf in Resources */,
+				C6DFC84029DEE56F008B072C /* Overpass-BlackItalic.ttf in Resources */,
+				C6DFC84829DEE56F008B072C /* Overpass-ExtraBold.ttf in Resources */,
+				C6DFC83D29DEE56F008B072C /* Overpass-LightItalic.ttf in Resources */,
+				C6DFC84B29DEE56F008B072C /* OFL.txt in Resources */,
+				C6DFC83829DEE56F008B072C /* Overpass-Italic-VariableFont_wght.ttf in Resources */,
+				C6DFC84129DEE56F008B072C /* Overpass-Regular.ttf in Resources */,
+				C6DFC83A29DEE56F008B072C /* Overpass-ThinItalic.ttf in Resources */,
+				C6DFC83B29DEE56F008B072C /* Overpass-BoldItalic.ttf in Resources */,
+				C6DFC83929DEE56F008B072C /* Overpass-ExtraLight.ttf in Resources */,
+				C6DFC84629DEE56F008B072C /* Overpass-Bold.ttf in Resources */,
+				C6DFC84729DEE56F008B072C /* Overpass-Italic.ttf in Resources */,
+				C6DFC83C29DEE56F008B072C /* Overpass-Medium.ttf in Resources */,
+				C6DFC83E29DEE56F008B072C /* Overpass-ExtraBoldItalic.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -284,15 +494,125 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		40EEC8F8BBEBED15426C2BAC /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Neobis_iOS_UIScreens-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		834D555F0463ED2D1120383F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Neobis_iOS_UIScreens/Pods-Neobis_iOS_UIScreens-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Neobis_iOS_UIScreens/Pods-Neobis_iOS_UIScreens-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Neobis_iOS_UIScreens/Pods-Neobis_iOS_UIScreens-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		90F8D7ECFBBEE0BD364E549E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Neobis_iOS_UIScreens-Neobis_iOS_UIScreensUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		938EB19AB557EB48B9DBD83A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Neobis_iOS_UIScreensTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C5D85B24F171DE5D676B7F6A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Neobis_iOS_UIScreens-Neobis_iOS_UIScreensUITests/Pods-Neobis_iOS_UIScreens-Neobis_iOS_UIScreensUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Neobis_iOS_UIScreens-Neobis_iOS_UIScreensUITests/Pods-Neobis_iOS_UIScreens-Neobis_iOS_UIScreensUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Neobis_iOS_UIScreens-Neobis_iOS_UIScreensUITests/Pods-Neobis_iOS_UIScreens-Neobis_iOS_UIScreensUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		C659A7FD29DD75A20020AD11 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C63F79B429E05D1F0055E2FE /* Router.swift in Sources */,
+				C6DFC85229DEFFF6008B072C /* InformationView.swift in Sources */,
+				C6DFC85029DEED17008B072C /* UIColor+Extension.swift in Sources */,
 				C659A80929DD75A20020AD11 /* WeatherMainScreenVC.swift in Sources */,
+				C63F79AF29E045320055E2FE /* Sizes.swift in Sources */,
+				C63F79B129E05C6B0055E2FE /* WeatherWeekScreenVC.swift in Sources */,
 				C659A83929DD76AD0020AD11 /* NavigationController.swift in Sources */,
+				C6DFC85429DF2D8D008B072C /* Constraints.swift in Sources */,
 				C659A80529DD75A20020AD11 /* AppDelegate.swift in Sources */,
 				C659A80729DD75A20020AD11 /* SceneDelegate.swift in Sources */,
+				C6DFC81A29DEDB67008B072C /* StackView+Extension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -456,6 +776,7 @@
 		};
 		C659A82C29DD75A30020AD11 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 09F05CFAA2DBBE51F6025730 /* Pods-Neobis_iOS_UIScreens.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -482,6 +803,7 @@
 		};
 		C659A82D29DD75A30020AD11 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1967399FC0EAD5A53EA0333C /* Pods-Neobis_iOS_UIScreens.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -508,6 +830,7 @@
 		};
 		C659A82F29DD75A30020AD11 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 900A3941FFA699B8563AE4EB /* Pods-Neobis_iOS_UIScreensTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -527,6 +850,7 @@
 		};
 		C659A83029DD75A30020AD11 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8396006C8E3E470588C2CC1F /* Pods-Neobis_iOS_UIScreensTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -546,6 +870,7 @@
 		};
 		C659A83229DD75A30020AD11 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 09546C2ACEBAE6D40C326C50 /* Pods-Neobis_iOS_UIScreens-Neobis_iOS_UIScreensUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -563,6 +888,7 @@
 		};
 		C659A83329DD75A30020AD11 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5394A8F5E1352AD087DDB441 /* Pods-Neobis_iOS_UIScreens-Neobis_iOS_UIScreensUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;

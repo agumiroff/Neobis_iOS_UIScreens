@@ -18,6 +18,12 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         // This delegate does not imply the connecting scene or session are new (see `application:configurationForConnectingSceneSession` instead).
         guard let windowScene = (scene as? UIWindowScene) else { return }
         
+        let screenWidth = windowScene.screen.bounds.width
+        let screenHeight = windowScene.screen.bounds.height
+        
+        Constraints.screenWidth = screenWidth
+        Constraints.screenHeight = screenHeight
+        
         let view = WeatherMainScreenVC()
         let navigationController = Navigation()
         navigationController.viewControllers = [view]
