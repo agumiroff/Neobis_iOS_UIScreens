@@ -16,8 +16,8 @@ enum Constraints {
     static private let layoutWidth = 414.0
     static private let layoutHeight = 896.0
 
-    static private let proportionWidth = screenWidth/layoutWidth
-    static private let proportionHeight = screenHeight/layoutHeight
+    static let proportionWidth = screenWidth/layoutWidth
+    static let proportionHeight = screenHeight/layoutHeight
 
     enum MainWeatherScreen {
         
@@ -140,8 +140,64 @@ enum Constraints {
             static let cornerRadius = getConstraint(side: .height, size: 20)
         }
         
-        enum WeekScreen {
-            
+        
+    }
+    
+    enum WeekScreen {
+        
+        enum Today {
+            static let top = getConstraint(side: .height, size: 138)
+            static let left = getConstraint(side: .width, size: 30)
+        }
+        
+        enum Date {
+            static let right = getConstraint(side: .width, size: -23)
+        }
+        
+        enum ShortInfoStack {
+            static let top = getConstraint(side: .height, size: 32)
+            static let left = getConstraint(side: .width, size: 8)
+            static let height = getConstraint(side: .height, size: 155)
+        }
+        
+        enum TemperatureLabel {
+            static let top = getConstraint(side: .height, size: 13)
+        }
+        
+        enum StarImage {
+            static let horizontal = getConstraint(side: .width, size: -6)
+            static let vertical = getConstraint(side: .height, size: -4)
+            static let width = getConstraint(side: .width, size: 12.69)
+        }
+        
+        enum CloudImage {
+            static let height = getConstraint(side: .height, size: 21.74)
+            static let width = getConstraint(side: .width, size: 34.21)
+        }
+        
+        enum TimeLabel {
+            static let bottom = getConstraint(side: .height, size: -13)
+        }
+        
+        enum ThisWeek {
+            static let top = getConstraint(side: .height, size: 51)
+            static let left = getConstraint(side: .width, size: 30)
+        }
+        
+        enum Calendar {
+            static let right = getConstraint(side: .width, size: -30)
+            static let side = getConstraint(side: .height, size: 20)
+        }
+        
+        enum TableView {
+            static let top = getConstraint(side: .height, size: 20)
+            static let sideOffset = getConstraint(side: .width, size: 30)
+            static let bottom = getConstraint(side: .height, size: -114)
+            static let cellHeight = getConstraint(side: .height, size: 60)
+        }
+        
+        enum Footer {
+            static let bottom = getConstraint(side: .height, size: -27)
         }
     }
 

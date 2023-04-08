@@ -24,7 +24,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         Constraints.screenWidth = screenWidth
         Constraints.screenHeight = screenHeight
         
-        let view = WeatherMainScreenVC()
+        let view = WeatherWeekScreenVC()
         let navigationController = Navigation()
         navigationController.viewControllers = [view]
         

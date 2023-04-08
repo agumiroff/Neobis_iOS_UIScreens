@@ -195,8 +195,6 @@ extension WeatherMainScreenVC {
         rightCurvedLine.snp.makeConstraints { make in
             make.left.equalTo(Constraints.MainWeatherScreen.RightCurvedLine.left)
             make.top.equalTo(Constraints.MainWeatherScreen.RightCurvedLine.top)
-            make.width.equalTo(Constraints.MainWeatherScreen.RightCurvedLine.width)
-            make.height.equalTo(Constraints.MainWeatherScreen.RightCurvedLine.height)
             
         }
     }
@@ -207,17 +205,17 @@ extension WeatherMainScreenVC {
         sunGlow.snp.makeConstraints { make in
             make.top.equalTo(Constraints.MainWeatherScreen.Sunglow.top)
             make.centerX.equalTo(view.snp.centerX)
-            make.width.equalTo(Constraints.MainWeatherScreen.Sunglow.width)
-            make.height.equalTo(Constraints.MainWeatherScreen.Sunglow.height)
+            make.width.height.equalTo(Constraints.MainWeatherScreen.Sunglow.height)
         }
-        
-        sunGlow.addSubview(sunImage)
         
         sunGlow.contentMode = .scaleAspectFit
         
+        
+        view.addSubview(sunImage)
         sunImage.snp.makeConstraints { make in
             make.centerX.equalTo(sunGlow.snp.centerX)
             make.centerY.equalTo(sunGlow.snp.centerY)
+            make.width.height.equalTo(Constraints.MainWeatherScreen.Sun.height)
         }
     }
     

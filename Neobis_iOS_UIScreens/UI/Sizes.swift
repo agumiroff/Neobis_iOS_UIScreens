@@ -23,7 +23,7 @@ enum Sizes {
             static let fontSize = 18.0
         }
         
-        enum Temperature {
+        enum ExtraLargeSize {
             static let fontSize = getConstraint(side: .height, size: 100)
         }
         
@@ -31,7 +31,7 @@ enum Sizes {
             static let fontSize = getConstraint(side: .height, size: 100)
         }
         
-        enum WeatherDescription {
+        enum LargeSize {
             static let fontSize = 24.0
         }
         
@@ -58,7 +58,7 @@ extension Sizes {
 }
 
 enum Fonts {
-    static let regular = "Overpass"
+    static let regular = "Overpass-Regular"
     static let semiBold = "Overpass-SemiBold"
     static let bold = "Overpass-Bold"
 }

@@ -24,7 +24,7 @@ class InformationView: UIView {
         label.layer.shadowOpacity = 1
         label.layer.shadowOffset = CGSize(width: -4, height: 8)
         label.font = UIFont(name: Fonts.semiBold,
-                            size: Sizes.MainWeatherScreen.Temperature.fontSize)
+                            size: Sizes.MainWeatherScreen.ExtraLargeSize.fontSize)
         label.text = "22"
         label.textColor = .white
         return label
@@ -52,7 +52,7 @@ class InformationView: UIView {
         label.layer.shadowOpacity = 1
         label.layer.shadowOffset = CGSize(width: -2, height: 3)
         label.font = UIFont(name: Fonts.semiBold,
-                            size: Sizes.MainWeatherScreen.WeatherDescription.fontSize)
+                            size: Sizes.MainWeatherScreen.LargeSize.fontSize)
         label.text = "Солнечно"
         label.textColor = .white
         return label
