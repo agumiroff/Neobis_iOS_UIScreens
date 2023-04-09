@@ -145,6 +145,12 @@ enum Constraints {
     
     enum WeekScreen {
         
+        enum NavigationView {
+            
+            static let left = getConstraint(side: .width, size: 30)
+            static let width = getConstraint(side: .width, size: 100)
+        }
+        
         enum Today {
             static let top = getConstraint(side: .height, size: 138)
             static let left = getConstraint(side: .width, size: 30)

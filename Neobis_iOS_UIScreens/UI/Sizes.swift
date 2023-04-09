@@ -24,7 +24,7 @@ enum Sizes {
         }
         
         enum ExtraLargeSize {
-            static let fontSize = getConstraint(side: .height, size: 100)
+            static let fontSize = getConstraint(side: .height, size: 100.0)
         }
         
         enum Degree {

@@ -106,10 +106,13 @@ class WeatherWeekScreenVC: UIViewController{
     //MARK: ViewDidLoad
     override func viewDidLoad() {
         super.viewDidLoad()
+        navigationController?.isNavigationBarHidden = false
         viewsSetup()
     }
+    
 }
 
+//MARK: Views setup
 extension WeatherWeekScreenVC {
     
     private func viewsSetup() {
@@ -138,14 +141,27 @@ extension WeatherWeekScreenVC {
     }
     
     private func navigationControllerSetup() {
+        let tap = UITapGestureRecognizer()
+        tap.numberOfTapsRequired = 1
+        tap.addTarget(self, action:  #selector(pop(sender:)))
+        let customView = BackButtonView()
+        customView.addGestureRecognizer(tap)
+        customView.isUserInteractionEnabled = true
+       
+        navigationItem.leftBarButtonItem = UIBarButtonItem()
         
-        navigationController?.isNavigationBarHidden = false
-        navigationItem.leftBarButtonItems = [
-            UIBarButtonItem(title: "1222", image: UIImage(systemName: "circle"), target: self, action: #selector(pop)),
-        ]
+        navigationController?.navigationBar.addSubview(customView)
+        customView.snp.makeConstraints { make in
+            make.left.equalTo(Constraints.WeekScreen.NavigationView.left)
+            make.width.equalTo(Constraints.WeekScreen.NavigationView.width)
+            make.top.bottom.equalToSuperview()
+        }
         
-        navigationItem.rightBarButtonItem = UIBarButtonItem(image: UIImage(systemName: "gearshape"), style: .plain, target: self, action: #selector(pop))
+        let configButton = UIBarButtonItem()
+        configButton.image = UIImage(systemName: "gearshape")
+        navigationItem.rightBarButtonItem = configButton
         navigationItem.rightBarButtonItem?.tintColor = .white
+        
     }
     
     private func leftCurvedLineSetup() {
@@ -173,6 +189,12 @@ extension WeatherWeekScreenVC {
     }
     
     private func todaySetup() {
+        let tap = UITapGestureRecognizer()
+        tap.numberOfTapsRequired = 1
+        tap.addTarget(self, action:  #selector(pop(sender:)))
+        todayLabel.isUserInteractionEnabled = true
+        todayLabel.addGestureRecognizer(tap)
+        
         view.addSubview(todayLabel)
         
         todayLabel.snp.makeConstraints { make in
@@ -280,7 +302,64 @@ extension WeatherWeekScreenVC: UITableViewDataSource, UITableViewDelegate  {
         Constraints.WeekScreen.TableView.cellHeight
     }
     
-    @objc func pop() {
+    @objc func pop(sender: UITapGestureRecognizer) {
         navigationController?.popViewController(animated: true)
+        navigationController?.isNavigationBarHidden = true
+    }
+    
+    
+}
+
+class BackButtonView: UIView {
+    
+    let chevron: UIImageView = {
+        let imageView = UIImageView()
+        imageView.image = UIImage(systemName: "chevron.left")
+        imageView.preferredSymbolConfiguration = .init(font: UIFont(name: Fonts.bold, size: 24)!, scale: .small)
+        imageView.contentMode = .scaleAspectFit
+        imageView.tintColor = .white
+        return imageView
+    }()
+    
+    let label: UILabel = {
+        let label = UILabel()
+        label.text = "Назад"
+        label.font = UIFont(name: Fonts.bold, size: Sizes.MainWeatherScreen.LargeSize.fontSize)
+        label.layer.shadowOpacity = 0.1
+        label.layer.shadowRadius = 1
+        label.layer.shadowOffset = CGSize(width: -2, height: 3)
+        label.layer.position = label.center
+        label.textColor = .white
+        label.shadowColor = UIColor(red: 0, green: 0, blue: 0, alpha: 0.1)
+        return label
+    }()
+    
+    override init(frame: CGRect) {
+        super.init(frame: frame)
+        self.isUserInteractionEnabled = true
+        setupViews()
+        
+    }
+    
+    required init?(coder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
+    
+    private func setupViews() {
+        chevron.isUserInteractionEnabled = true
+        label.isUserInteractionEnabled = true
+        
+        addSubview(chevron)
+        addSubview(label)
+        
+        chevron.snp.makeConstraints { make in
+            make.left.equalToSuperview()
+            make.centerY.equalTo(snp.centerY)
+        }
+        
+        label.snp.makeConstraints { make in
+            make.left.equalTo(chevron.snp.right).offset(11)
+            make.centerY.equalTo(chevron.snp.centerY).offset(1)
+        }
     }
 }

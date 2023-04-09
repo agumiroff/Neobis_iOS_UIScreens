@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import SwiftUI
 
 class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
@@ -24,13 +25,13 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         Constraints.screenWidth = screenWidth
         Constraints.screenHeight = screenHeight
         
-        let view = WeatherWeekScreenVC()
+        let view = WeatherMainScreenVC()
         let navigationController = Navigation()
         navigationController.viewControllers = [view]
         
         window = UIWindow(frame: windowScene.coordinateSpace.bounds)
         window?.windowScene = windowScene
-        window?.rootViewController = navigationController
+        window?.rootViewController = UIHostingController(rootView: CryptoMainScreenVC())
         window?.makeKeyAndVisible()
     }
 

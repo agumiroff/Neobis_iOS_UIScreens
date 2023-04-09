@@ -85,10 +85,13 @@ class WeatherMainScreenVC: UIViewController {
         return button
     }()
     
+  
+    
     //MARK: ViewDidLoad
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = UIColor(hexString: "#47BFDF")
+        
         setupViews()
     }
 }
