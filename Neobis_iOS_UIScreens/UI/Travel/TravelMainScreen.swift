@@ -21,6 +21,7 @@ struct TravelMainScreen: View {
         VStack {
             Greetings()
             Search()
+            ScrollView()
         }
     }
     
@@ -37,7 +38,14 @@ struct TravelMainScreen: View {
     @ViewBuilder
     func Search() -> some View {
         ZStack {
-            
+            Rectangle()
+                .foregroundColor(Color(.systemBackground))
+                .cornerRadius(5)
+                .shadow(color: Color(red: 0,
+                                     green: 0,
+                                     blue: 0,
+                                     opacity: 0.25),
+                        radius: 5)
             HStack {
                 Text(searchHint)
                     .foregroundColor(.blue)
@@ -45,12 +53,23 @@ struct TravelMainScreen: View {
                 Image(systemName: "magnifyingglass")
             }
             .padding(15)
-            .background(.white)
-            .border(.black)
             
             TextField("", text: $text) { focused in
                 searchHint = focused ? "" : "Куда хотите поехать?"
             }
         }
+        .frame(height: 40)
+        .padding()
+    }
+    
+    @ViewBuilder
+    func ScrollView() -> some View {
+        SwiftUI.ScrollView {
+            ForEach(TravelData.array) { city in
+                Image(city.imageName)
+                    .padding(.bottom)
+            }
+        }
+        .scrollIndicators(.never)
     }
 }
