@@ -24,7 +24,7 @@ class TableViewCell: UITableViewCell {
     
     let temperatureLabel: UILabel = {
         let label = UILabel()
-        label.font = UIFont(name: Fonts.regular, size: Sizes.MainWeatherScreen.Default.fontSize)
+        label.font = UIFont(name: Fonts.regular, size: FontSizes.MainWeatherScreen.defaultSize)
         label.layer.shadowOpacity = 0.1
         label.layer.shadowRadius = 1
         label.layer.shadowOffset = CGSize(width: -2, height: 3)
@@ -36,7 +36,7 @@ class TableViewCell: UITableViewCell {
     
     let dateLabel: UILabel = {
         let label = UILabel()
-        label.font = UIFont(name: Fonts.regular, size: Sizes.MainWeatherScreen.Default.fontSize)
+        label.font = UIFont(name: Fonts.regular, size: FontSizes.MainWeatherScreen.defaultSize)
         label.layer.shadowOpacity = 0.1
         label.layer.shadowRadius = 1
         label.layer.shadowOffset = CGSize(width: -2, height: 3)

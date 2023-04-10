@@ -10,9 +10,16 @@ import Foundation
 class Router {
     let navigationController = Navigation()
     
+    func presentationScreenRoute() {
+        let view = WeatherMainScreenVC()
+        
+        navigationController.viewControllers = [view]
+    }
+    
     func mainWeatherScreenRoute() {
         let view = WeatherMainScreenVC()
         
         navigationController.viewControllers = [view]        
     }
+    
 }

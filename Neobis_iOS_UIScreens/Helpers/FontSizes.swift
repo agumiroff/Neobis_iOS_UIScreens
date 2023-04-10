@@ -7,7 +7,7 @@
 
 import Foundation
 
-enum Sizes {
+enum FontSizes {
     
     static var screenWidth = Constraints.screenWidth
     static var screenHeight = Constraints.screenHeight
@@ -19,25 +19,11 @@ enum Sizes {
     static private let proportionHeight = screenHeight/layoutHeight
     
     enum MainWeatherScreen {
-        enum Date {
-            static let fontSize = 18.0
-        }
+            static let extraLargeSize = getConstraint(side: .height, size: 100.0)
         
-        enum ExtraLargeSize {
-            static let fontSize = getConstraint(side: .height, size: 100.0)
-        }
+            static let largeSize = 24.0
         
-        enum Degree {
-            static let fontSize = getConstraint(side: .height, size: 100)
-        }
-        
-        enum LargeSize {
-            static let fontSize = 24.0
-        }
-        
-        enum Default {
-            static let fontSize = 18.0
-        }
+            static let defaultSize = 18.0
     }
     
     enum ScreenSide {
@@ -46,13 +32,13 @@ enum Sizes {
     }
 }
 
-extension Sizes {
+extension FontSizes {
     static private func getConstraint(side: ScreenSide, size: Double) -> CGFloat {
         switch side {
         case .height:
-            return size * Sizes.proportionHeight
+            return size * FontSizes.proportionHeight
         case .width:
-            return size * Sizes.proportionWidth
+            return size * FontSizes.proportionWidth
         }
     }
 }

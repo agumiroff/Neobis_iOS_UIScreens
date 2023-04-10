@@ -38,12 +38,12 @@ class WeatherWeekScreenVC: UIViewController{
     }()
     
     private let todayLabel = UILabel(fonName: Fonts.bold,
-                             fontSize: Sizes.MainWeatherScreen.LargeSize.fontSize,
+                             fontSize: FontSizes.MainWeatherScreen.largeSize,
                              labelText: "Сегодня",
                              fontColor: .white)
     
     private let date = UILabel(fonName: Fonts.regular,
-                             fontSize: Sizes.MainWeatherScreen.Default.fontSize,
+                             fontSize: FontSizes.MainWeatherScreen.defaultSize,
                              labelText: "Апр, 26",
                              fontColor: .white)
     
@@ -57,7 +57,7 @@ class WeatherWeekScreenVC: UIViewController{
     }()
     
     private let thisWeek = UILabel(fonName: Fonts.bold,
-                             fontSize: Sizes.MainWeatherScreen.LargeSize.fontSize,
+                             fontSize: FontSizes.MainWeatherScreen.largeSize,
                              labelText: "На этой неделе",
                              fontColor: .white)
     
@@ -84,7 +84,7 @@ class WeatherWeekScreenVC: UIViewController{
     let footerLabel: UILabel = {
         let label = UILabel()
         label.text = "AccuWeather"
-        label.font = UIFont(name: Fonts.regular, size: Sizes.MainWeatherScreen.Default.fontSize)
+        label.font = UIFont(name: Fonts.regular, size: FontSizes.MainWeatherScreen.defaultSize)
         label.layer.shadowOpacity = 0.1
         label.layer.shadowRadius = 1
         label.layer.shadowOffset = CGSize(width: -2, height: 3)
@@ -189,12 +189,6 @@ extension WeatherWeekScreenVC {
     }
     
     private func todaySetup() {
-        let tap = UITapGestureRecognizer()
-        tap.numberOfTapsRequired = 1
-        tap.addTarget(self, action:  #selector(pop(sender:)))
-        todayLabel.isUserInteractionEnabled = true
-        todayLabel.addGestureRecognizer(tap)
-        
         view.addSubview(todayLabel)
         
         todayLabel.snp.makeConstraints { make in
@@ -324,7 +318,7 @@ class BackButtonView: UIView {
     let label: UILabel = {
         let label = UILabel()
         label.text = "Назад"
-        label.font = UIFont(name: Fonts.bold, size: Sizes.MainWeatherScreen.LargeSize.fontSize)
+        label.font = UIFont(name: Fonts.bold, size: FontSizes.MainWeatherScreen.largeSize)
         label.layer.shadowOpacity = 0.1
         label.layer.shadowRadius = 1
         label.layer.shadowOffset = CGSize(width: -2, height: 3)

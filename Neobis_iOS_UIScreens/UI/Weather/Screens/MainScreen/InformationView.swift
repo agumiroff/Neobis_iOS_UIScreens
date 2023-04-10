@@ -12,7 +12,7 @@ import SnapKit
 class InformationView: UIView {
     
     let date = UILabel(fonName: Fonts.regular,
-                       fontSize: Sizes.MainWeatherScreen.Date.fontSize,
+                       fontSize: FontSizes.MainWeatherScreen.defaultSize,
                        labelText: "Сегодня, 26 Апрель",
                        fontColor: .white)
     
@@ -24,7 +24,7 @@ class InformationView: UIView {
         label.layer.shadowOpacity = 1
         label.layer.shadowOffset = CGSize(width: -4, height: 8)
         label.font = UIFont(name: Fonts.semiBold,
-                            size: Sizes.MainWeatherScreen.ExtraLargeSize.fontSize)
+                            size: FontSizes.MainWeatherScreen.extraLargeSize)
         label.text = "22"
         label.textColor = .white
         return label
@@ -38,7 +38,7 @@ class InformationView: UIView {
         label.layer.shadowOpacity = 1
         label.layer.shadowOffset = CGSize(width: -4, height: 8)
         label.font = UIFont(name: Fonts.semiBold,
-                            size: Sizes.MainWeatherScreen.Degree.fontSize)
+                            size: FontSizes.MainWeatherScreen.extraLargeSize)
         label.text = "°"
         label.textColor = .white
         return label
@@ -52,7 +52,7 @@ class InformationView: UIView {
         label.layer.shadowOpacity = 1
         label.layer.shadowOffset = CGSize(width: -2, height: 3)
         label.font = UIFont(name: Fonts.semiBold,
-                            size: Sizes.MainWeatherScreen.LargeSize.fontSize)
+                            size: FontSizes.MainWeatherScreen.largeSize)
         label.text = "Солнечно"
         label.textColor = .white
         return label
@@ -60,32 +60,32 @@ class InformationView: UIView {
     
     
     let windLabel = UILabel(fonName: Fonts.regular,
-                            fontSize: Sizes.MainWeatherScreen.Default.fontSize,
+                            fontSize: FontSizes.MainWeatherScreen.defaultSize,
                             labelText: "Ветер",
                             fontColor: .white)
     
     let rainLabel = UILabel(fonName: Fonts.regular,
-                            fontSize: Sizes.MainWeatherScreen.Default.fontSize,
+                            fontSize: FontSizes.MainWeatherScreen.defaultSize,
                             labelText: "Дождь",
                             fontColor: .white)
     
     let windDivider = UILabel(fonName: Fonts.regular,
-                              fontSize: Sizes.MainWeatherScreen.Default.fontSize,
+                              fontSize: FontSizes.MainWeatherScreen.defaultSize,
                               labelText: "|",
                               fontColor: .white)
     
     let rainDivider = UILabel(fonName: Fonts.regular,
-                              fontSize: Sizes.MainWeatherScreen.Default.fontSize,
+                              fontSize: FontSizes.MainWeatherScreen.defaultSize,
                               labelText: "|",
                               fontColor: .white)
     
     let windSpeed = UILabel(fonName: Fonts.regular,
-                            fontSize: Sizes.MainWeatherScreen.Default.fontSize,
+                            fontSize: FontSizes.MainWeatherScreen.defaultSize,
                             labelText: "15 km/h",
                             fontColor: .white)
     
     let humidity = UILabel(fonName: Fonts.regular,
-                           fontSize: Sizes.MainWeatherScreen.Default.fontSize,
+                           fontSize: FontSizes.MainWeatherScreen.defaultSize,
                            labelText: "26 %",
                            fontColor: .white)
     

@@ -9,7 +9,12 @@
 /* Begin PBXBuildFile section */
 		2683B0BB1CA48B54C0A95C63 /* Pods_Neobis_iOS_UIScreens_Neobis_iOS_UIScreensUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FEB513C69C4EB45B6A1F1A1F /* Pods_Neobis_iOS_UIScreens_Neobis_iOS_UIScreensUITests.framework */; };
 		479DEE93518E972E0BC9D50A /* Pods_Neobis_iOS_UIScreens.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D1D03901E7F59C4E28A06DF /* Pods_Neobis_iOS_UIScreens.framework */; };
-		C63F79AF29E045320055E2FE /* Sizes.swift in Sources */ = {isa = PBXBuildFile; fileRef = C63F79AE29E045320055E2FE /* Sizes.swift */; };
+		C606299329E43DAE009E8A4E /* FinanceMainScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = C606299229E43DAE009E8A4E /* FinanceMainScreen.swift */; };
+		C606299629E43E07009E8A4E /* View+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C606299529E43E07009E8A4E /* View+Extension.swift */; };
+		C606299829E44BF2009E8A4E /* DateScroll.swift in Sources */ = {isa = PBXBuildFile; fileRef = C606299729E44BF2009E8A4E /* DateScroll.swift */; };
+		C606299A29E44F3C009E8A4E /* FinanceModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C606299929E44F3C009E8A4E /* FinanceModel.swift */; };
+		C606299D29E45018009E8A4E /* FinanceData.swift in Sources */ = {isa = PBXBuildFile; fileRef = C606299C29E45018009E8A4E /* FinanceData.swift */; };
+		C63F79AF29E045320055E2FE /* FontSizes.swift in Sources */ = {isa = PBXBuildFile; fileRef = C63F79AE29E045320055E2FE /* FontSizes.swift */; };
 		C63F79B129E05C6B0055E2FE /* WeatherWeekScreenVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C63F79B029E05C6B0055E2FE /* WeatherWeekScreenVC.swift */; };
 		C63F79B429E05D1F0055E2FE /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = C63F79B329E05D1F0055E2FE /* Router.swift */; };
 		C63F79B929E080F80055E2FE /* ShortInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C63F79B829E080F80055E2FE /* ShortInfoView.swift */; };
@@ -82,7 +87,12 @@
 		8396006C8E3E470588C2CC1F /* Pods-Neobis_iOS_UIScreensTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Neobis_iOS_UIScreensTests.release.xcconfig"; path = "Target Support Files/Pods-Neobis_iOS_UIScreensTests/Pods-Neobis_iOS_UIScreensTests.release.xcconfig"; sourceTree = "<group>"; };
 		900A3941FFA699B8563AE4EB /* Pods-Neobis_iOS_UIScreensTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Neobis_iOS_UIScreensTests.debug.xcconfig"; path = "Target Support Files/Pods-Neobis_iOS_UIScreensTests/Pods-Neobis_iOS_UIScreensTests.debug.xcconfig"; sourceTree = "<group>"; };
 		C277A361504644148A3873A7 /* Pods_Neobis_iOS_UIScreensTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Neobis_iOS_UIScreensTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		C63F79AE29E045320055E2FE /* Sizes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sizes.swift; sourceTree = "<group>"; };
+		C606299229E43DAE009E8A4E /* FinanceMainScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinanceMainScreen.swift; sourceTree = "<group>"; };
+		C606299529E43E07009E8A4E /* View+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+Extension.swift"; sourceTree = "<group>"; };
+		C606299729E44BF2009E8A4E /* DateScroll.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateScroll.swift; sourceTree = "<group>"; };
+		C606299929E44F3C009E8A4E /* FinanceModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinanceModel.swift; sourceTree = "<group>"; };
+		C606299C29E45018009E8A4E /* FinanceData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinanceData.swift; sourceTree = "<group>"; };
+		C63F79AE29E045320055E2FE /* FontSizes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FontSizes.swift; sourceTree = "<group>"; };
 		C63F79B029E05C6B0055E2FE /* WeatherWeekScreenVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherWeekScreenVC.swift; sourceTree = "<group>"; };
 		C63F79B329E05D1F0055E2FE /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
 		C63F79B829E080F80055E2FE /* ShortInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShortInfoView.swift; sourceTree = "<group>"; };
@@ -171,6 +181,51 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		C606298D29E43C0A009E8A4E /* Finance */ = {
+			isa = PBXGroup;
+			children = (
+				C606299B29E45009009E8A4E /* Data */,
+				C606299429E43DCA009E8A4E /* Elements */,
+				C606299229E43DAE009E8A4E /* FinanceMainScreen.swift */,
+				C606299929E44F3C009E8A4E /* FinanceModel.swift */,
+			);
+			path = Finance;
+			sourceTree = "<group>";
+		};
+		C606298E29E43C1C009E8A4E /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				C6DFC81729DEDB4C008B072C /* Extensions */,
+				C6DFC81B29DEE2B7008B072C /* Fonts */,
+				C6DFC85329DF2D8D008B072C /* Constraints.swift */,
+				C63F79AE29E045320055E2FE /* FontSizes.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		C606299429E43DCA009E8A4E /* Elements */ = {
+			isa = PBXGroup;
+			children = (
+				C606299729E44BF2009E8A4E /* DateScroll.swift */,
+			);
+			path = Elements;
+			sourceTree = "<group>";
+		};
+		C606299B29E45009009E8A4E /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				C606299C29E45018009E8A4E /* FinanceData.swift */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		C606299E29E490FB009E8A4E /* Travel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Travel;
+			sourceTree = "<group>";
+		};
 		C61D5CE6341233242763F24E /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -257,6 +312,7 @@
 			children = (
 				C63F79B229E05D180055E2FE /* Router */,
 				C6DFC81329DDE4F4008B072C /* UI */,
+				C606298E29E43C1C009E8A4E /* Helpers */,
 				C659A83729DD76A30020AD11 /* Navigation */,
 				C659A83429DD75E00020AD11 /* Application */,
 			);
@@ -322,10 +378,8 @@
 			children = (
 				C63F79BE29E188D80055E2FE /* Weather */,
 				C63F79BF29E188E20055E2FE /* Crypto */,
-				C6DFC81729DEDB4C008B072C /* Extensions */,
-				C6DFC81B29DEE2B7008B072C /* Fonts */,
-				C6DFC85329DF2D8D008B072C /* Constraints.swift */,
-				C63F79AE29E045320055E2FE /* Sizes.swift */,
+				C606298D29E43C0A009E8A4E /* Finance */,
+				C606299E29E490FB009E8A4E /* Travel */,
 			);
 			path = UI;
 			sourceTree = "<group>";
@@ -335,6 +389,7 @@
 			children = (
 				C6DFC81929DEDB67008B072C /* StackView+Extension.swift */,
 				C6DFC84F29DEED17008B072C /* UIColor+Extension.swift */,
+				C606299529E43E07009E8A4E /* View+Extension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -647,20 +702,25 @@
 				C63F79B429E05D1F0055E2FE /* Router.swift in Sources */,
 				C63F79B929E080F80055E2FE /* ShortInfoView.swift in Sources */,
 				C63F79C529E189890055E2FE /* CryptoMainScreenVC.swift in Sources */,
+				C606299629E43E07009E8A4E /* View+Extension.swift in Sources */,
+				C606299A29E44F3C009E8A4E /* FinanceModel.swift in Sources */,
 				C6DFC85229DEFFF6008B072C /* InformationView.swift in Sources */,
 				C6DFC85029DEED17008B072C /* UIColor+Extension.swift in Sources */,
 				C659A80929DD75A20020AD11 /* WeatherMainScreenVC.swift in Sources */,
 				C63F79BD29E094040055E2FE /* TableViewCell.swift in Sources */,
-				C63F79AF29E045320055E2FE /* Sizes.swift in Sources */,
+				C63F79AF29E045320055E2FE /* FontSizes.swift in Sources */,
 				C63F79BB29E081140055E2FE /* Model.swift in Sources */,
 				C63F79B129E05C6B0055E2FE /* WeatherWeekScreenVC.swift in Sources */,
 				C63F79C129E189070055E2FE /* CryptoModel.swift in Sources */,
+				C606299829E44BF2009E8A4E /* DateScroll.swift in Sources */,
 				C659A83929DD76AD0020AD11 /* NavigationController.swift in Sources */,
 				C6DFC85429DF2D8D008B072C /* Constraints.swift in Sources */,
 				C63F79C729E1A8DA0055E2FE /* Data.swift in Sources */,
 				C659A80529DD75A20020AD11 /* AppDelegate.swift in Sources */,
+				C606299D29E45018009E8A4E /* FinanceData.swift in Sources */,
 				C659A80729DD75A20020AD11 /* SceneDelegate.swift in Sources */,
 				C6DFC81A29DEDB67008B072C /* StackView+Extension.swift in Sources */,
+				C606299329E43DAE009E8A4E /* FinanceMainScreen.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

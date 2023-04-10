@@ -31,7 +31,8 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         
         window = UIWindow(frame: windowScene.coordinateSpace.bounds)
         window?.windowScene = windowScene
-        window?.rootViewController = UIHostingController(rootView: CryptoMainScreenVC())
+        window?.rootViewController = navigationController
+//        UIHostingController(rootView: CryptoMainScreenVC())
         window?.makeKeyAndVisible()
     }
 
