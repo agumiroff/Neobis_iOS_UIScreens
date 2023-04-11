@@ -34,16 +34,19 @@ struct FinanceMainScreen: View {
                     .padding(.bottom, 15)
                     .tabItem {
                         Image(systemName: "chart.pie.fill")
+                        Text("Главная")
                     }
                     .tag(1)
                 FinanceRedView()
                     .tabItem {
                         Image(systemName: "chart.bar.xaxis")
+                        Text("Отчеты")
                     }
                     .tag(2)
                 FinanceBlueView()
                     .tabItem {
                         Image(systemName: "person")
+                        Text("Профиль")
                     }
                     .tag(3)
             }

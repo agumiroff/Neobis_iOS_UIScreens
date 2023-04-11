@@ -16,6 +16,8 @@
 		C606299D29E45018009E8A4E /* FinanceData.swift in Sources */ = {isa = PBXBuildFile; fileRef = C606299C29E45018009E8A4E /* FinanceData.swift */; };
 		C6270D9E29E4C100007B5FB4 /* TravelMainScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6270D9D29E4C100007B5FB4 /* TravelMainScreen.swift */; };
 		C6270DA029E4C11B007B5FB4 /* TravelModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6270D9F29E4C11B007B5FB4 /* TravelModel.swift */; };
+		C6270DA429E4C4D7007B5FB4 /* SinglesScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6270DA329E4C4D7007B5FB4 /* SinglesScreen.swift */; };
+		C6270DA629E4CF28007B5FB4 /* SinglesData.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6270DA529E4CF28007B5FB4 /* SinglesData.swift */; };
 		C63F79AF29E045320055E2FE /* FontSizes.swift in Sources */ = {isa = PBXBuildFile; fileRef = C63F79AE29E045320055E2FE /* FontSizes.swift */; };
 		C63F79B129E05C6B0055E2FE /* WeatherWeekScreenVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C63F79B029E05C6B0055E2FE /* WeatherWeekScreenVC.swift */; };
 		C63F79B429E05D1F0055E2FE /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = C63F79B329E05D1F0055E2FE /* Router.swift */; };
@@ -94,8 +96,10 @@
 		C606299729E44BF2009E8A4E /* DateScroll.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateScroll.swift; sourceTree = "<group>"; };
 		C606299929E44F3C009E8A4E /* FinanceModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinanceModel.swift; sourceTree = "<group>"; };
 		C606299C29E45018009E8A4E /* FinanceData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinanceData.swift; sourceTree = "<group>"; };
-		C6270D9D29E4C100007B5FB4 /* TravelMainScreen.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TravelMainScreen.swift; path = Travel/TravelMainScreen.swift; sourceTree = "<group>"; };
+		C6270D9D29E4C100007B5FB4 /* TravelMainScreen.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TravelMainScreen.swift; sourceTree = "<group>"; };
 		C6270D9F29E4C11B007B5FB4 /* TravelModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TravelModel.swift; sourceTree = "<group>"; };
+		C6270DA329E4C4D7007B5FB4 /* SinglesScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SinglesScreen.swift; sourceTree = "<group>"; };
+		C6270DA529E4CF28007B5FB4 /* SinglesData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SinglesData.swift; sourceTree = "<group>"; };
 		C63F79AE29E045320055E2FE /* FontSizes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FontSizes.swift; sourceTree = "<group>"; };
 		C63F79B029E05C6B0055E2FE /* WeatherWeekScreenVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherWeekScreenVC.swift; sourceTree = "<group>"; };
 		C63F79B329E05D1F0055E2FE /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
@@ -226,6 +230,7 @@
 		C606299E29E490FB009E8A4E /* Travel */ = {
 			isa = PBXGroup;
 			children = (
+				C6270D9D29E4C100007B5FB4 /* TravelMainScreen.swift */,
 				C6270D9F29E4C11B007B5FB4 /* TravelModel.swift */,
 			);
 			path = Travel;
@@ -242,6 +247,15 @@
 				8396006C8E3E470588C2CC1F /* Pods-Neobis_iOS_UIScreensTests.release.xcconfig */,
 			);
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		C6270DA229E4C485007B5FB4 /* Singles */ = {
+			isa = PBXGroup;
+			children = (
+				C6270DA329E4C4D7007B5FB4 /* SinglesScreen.swift */,
+				C6270DA529E4CF28007B5FB4 /* SinglesData.swift */,
+			);
+			path = Singles;
 			sourceTree = "<group>";
 		};
 		C63F79B229E05D180055E2FE /* Router */ = {
@@ -385,7 +399,7 @@
 				C63F79BF29E188E20055E2FE /* Crypto */,
 				C606298D29E43C0A009E8A4E /* Finance */,
 				C606299E29E490FB009E8A4E /* Travel */,
-				C6270D9D29E4C100007B5FB4 /* TravelMainScreen.swift */,
+				C6270DA229E4C485007B5FB4 /* Singles */,
 			);
 			path = UI;
 			sourceTree = "<group>";
@@ -722,6 +736,7 @@
 				C606299829E44BF2009E8A4E /* DateScroll.swift in Sources */,
 				C659A83929DD76AD0020AD11 /* NavigationController.swift in Sources */,
 				C6270D9E29E4C100007B5FB4 /* TravelMainScreen.swift in Sources */,
+				C6270DA629E4CF28007B5FB4 /* SinglesData.swift in Sources */,
 				C6DFC85429DF2D8D008B072C /* Constraints.swift in Sources */,
 				C63F79C729E1A8DA0055E2FE /* Data.swift in Sources */,
 				C659A80529DD75A20020AD11 /* AppDelegate.swift in Sources */,
@@ -729,6 +744,7 @@
 				C659A80729DD75A20020AD11 /* SceneDelegate.swift in Sources */,
 				C6DFC81A29DEDB67008B072C /* StackView+Extension.swift in Sources */,
 				C606299329E43DAE009E8A4E /* FinanceMainScreen.swift in Sources */,
+				C6270DA429E4C4D7007B5FB4 /* SinglesScreen.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
