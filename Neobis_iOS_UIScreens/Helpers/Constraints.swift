@@ -112,15 +112,19 @@ enum Constraints {
         }
         
         enum WindIcon {
-            static let top = getConstraint(side: .height, size: 36)
-            static let left = getConstraint(side: .width, size: 69)
-            static let width = getConstraint(side: .width, size: 20)
+            static let right = getConstraint(side: .width, size: -15)
         }
         
         enum RainIcon {
-            static let top = getConstraint(side: .height, size: 22.27)
-            static let left = getConstraint(side: .width, size: 69)
-            static let width = getConstraint(side: .width, size: 20)
+            static let right = getConstraint(side: .width, size: -15)
+        }
+        
+        enum WindLabel {
+            static let width = getConstraint(side: .width, size: 80)
+        }
+        
+        enum RainLabel {
+            static let width = getConstraint(side: .width, size: 80)
         }
         
         enum WindSpeed {

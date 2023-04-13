@@ -89,165 +89,109 @@ class InformationView: UIView {
                            labelText: "26 %",
                            fontColor: .white)
     
-    let windIcon = UIImageView(image: UIImage(named: "windIcon"))
-    let rainIcon = UIImageView(image: UIImage(named: "rainIcon"))
+    let windIcon: UIImageView = {
+        let imageView = UIImageView()
+        imageView.image = UIImage(systemName: "wind")
+        imageView.tintColor = .white
+        return imageView
+    }()
     
+    let rainIcon: UIImageView = {
+        let imageView = UIImageView()
+        imageView.image = UIImage(systemName: "drop")
+        imageView.tintColor = .white
+        return imageView
+    }()
     
     override init(frame: CGRect) {
         super.init(frame: frame)
-        viewSetup()
-        dateSetup()
-        temperatureSetup()
-        degreeSetup()
-        weatherDescriptionSetup()
-        windIconSetup()
-        rainIconSetup()
-        windDividerSetup()
-        rainDividerSetup()
-        windLabelSetup()
-        rainLabelSetup()
-        windSpeedSetup()
-        humiditySetup()
+        setupViews()
     }
     
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
     
-    func viewSetup() {
+    func setupViews() {
         backgroundColor = UIColor(white: 1, alpha: 0.3)
         layer.cornerRadius = 20
         layer.borderColor = UIColor.white.cgColor
         layer.borderWidth = 2
-    }
-    
-    func dateSetup() {
+        
         addSubview(date)
+        addSubview(temperature)
+        addSubview(degree)
+        addSubview(weatherDescription)
+        addSubview(windIcon)
+        addSubview(rainIcon)
+        addSubview(windDivider)
+        addSubview(rainDivider)
+        addSubview(windLabel)
+        addSubview(rainLabel)
+        addSubview(windSpeed)
+        addSubview(humidity)
+        
         
         date.snp.makeConstraints { make in
             make.top.equalTo(Constraints.MainWeatherScreen.Date.top)
             make.centerX.equalTo(snp.centerX)
         }
-    }
-    
-    func temperatureSetup() {
-        addSubview(temperature)
         
         temperature.snp.makeConstraints { make in
             make.top.equalTo(date.snp.bottom)
             make.centerX.equalTo(snp.centerX)
         }
-    }
-    
-    func degreeSetup() {
-        addSubview(degree)
         
         degree.snp.makeConstraints { make in
             make.top.equalTo(temperature.snp.top)
             make.left.equalTo(temperature.snp.right).offset(Constraints.MainWeatherScreen.Degree.left)
         }
-    }
-    
-    
-    func weatherDescriptionSetup() {
-        addSubview(weatherDescription)
         
         weatherDescription.snp.makeConstraints { make in
             make.centerX.equalTo(snp.centerX)
             make.top.equalTo(temperature.snp.bottom)
         }
-    }
-    
-    func windIconSetup() {
-        addSubview(windIcon)
         
         windIcon.snp.makeConstraints { make in
-            make.top.equalTo(weatherDescription.snp.bottom).offset(Constraints.MainWeatherScreen.WindIcon.top)
-            make.left.equalTo(Constraints.MainWeatherScreen.WindIcon.left)
-            make.width.equalTo(Constraints.MainWeatherScreen.WindIcon.width)
+            make.centerY.equalTo(windLabel.snp.centerY)
+            make.right.equalTo(windLabel.snp.left).offset(-15)
         }
-    }
-    
-    func rainIconSetup() {
-        addSubview(rainIcon)
         
         rainIcon.snp.makeConstraints { make in
-            make.top.equalTo(windIcon.snp.bottom).offset(Constraints.MainWeatherScreen.RainIcon.top)
-            make.left.equalTo(Constraints.MainWeatherScreen.RainIcon.left)
-            make.width.equalTo(Constraints.MainWeatherScreen.RainIcon.width)
+            make.centerY.equalTo(rainLabel.snp.centerY)
+            make.right.equalTo(rainLabel.snp.left).offset(-15)
         }
-    }
-    
-    func windDividerSetup() {
-        addSubview(windDivider)
         
         windDivider.snp.makeConstraints { make in
-            make.centerY.equalTo(windIcon.snp.centerY)
+            make.top.equalTo(weatherDescription.snp.bottom).offset(10)
             make.centerX.equalTo(snp.centerX)
         }
-    }
-    
-    func rainDividerSetup() {
-        addSubview(rainDivider)
         
         rainDivider.snp.makeConstraints { make in
-            make.centerY.equalTo(rainIcon.snp.centerY)
+            make.top.equalTo(windDivider.snp.bottom).offset(10)
             make.centerX.equalTo(snp.centerX)
         }
-    }
-    
-    func windLabelSetup() {
-        addSubview(windLabel)
-        
-        windLabel.textAlignment = .center
         
         windLabel.snp.makeConstraints { make in
-            make.left.equalTo(windIcon.snp.right).offset(5)
-            make.centerY.equalTo(windIcon.snp.centerY)
-            make.right.equalTo(windDivider.snp.left).offset(-5)
+            make.centerY.equalTo(windDivider.snp.centerY)
+            make.right.equalTo(windDivider.snp.left).offset(-15)
+            make.width.equalTo(Constraints.MainWeatherScreen.WindLabel.width)
         }
-    }
-    
-    func rainLabelSetup() {
-        addSubview(rainLabel)
-        
-        rainLabel.textAlignment = .center
         
         rainLabel.snp.makeConstraints { make in
-            make.left.equalTo(rainIcon.snp.right).offset(5)
-            make.centerY.equalTo(rainIcon.snp.centerY)
-            make.right.equalTo(rainDivider.snp.left).offset(-5)
+            make.centerY.equalTo(rainDivider.snp.centerY)
+            make.right.equalTo(rainDivider.snp.left).offset(-15)
+            make.width.equalTo(Constraints.MainWeatherScreen.RainLabel.width)
         }
-    }
-    
-    func windSpeedSetup() {
-        addSubview(windSpeed)
         
         windSpeed.snp.makeConstraints { make in
             make.centerY.equalTo(windDivider.snp.centerY)
             make.left.equalTo(windDivider.snp.right).offset(Constraints.MainWeatherScreen.WindSpeed.left)
         }
-    }
-    
-    func humiditySetup() {
-        addSubview(humidity)
         
         humidity.snp.makeConstraints { make in
             make.centerY.equalTo(rainDivider.snp.centerY)
             make.left.equalTo(rainDivider.snp.right).offset(Constraints.MainWeatherScreen.Humidity.left)
         }
-    }
-}
-
-extension UILabel {
-    
-    convenience init(fonName: String,
-                     fontSize: CGFloat,
-                     labelText: String,
-                     fontColor: UIColor) {
-        self.init()
-        self.font = UIFont(name: fonName, size: fontSize)
-        self.textColor = fontColor
-        self.text = labelText
     }
 }

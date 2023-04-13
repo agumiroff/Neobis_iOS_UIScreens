@@ -49,35 +49,27 @@ class TableViewCell: UITableViewCell {
     override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
         super.init(style: .subtitle, reuseIdentifier: TableViewCell.reuseID)
         backgroundColor = .clear
-        dateSetup()
-        cloudSetup()
-        tempSetup()
+        setupViews()
     }
     
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
     
-    private func dateSetup() {
+    private func setupViews() {
         addSubview(dateLabel)
+        addSubview(cloudImage)
+        addSubview(temperatureLabel)
         
         dateLabel.snp.makeConstraints { make in
             make.left.equalToSuperview()
             make.centerY.equalTo(snp.centerY)
         }
-    }
-    
-    private func cloudSetup() {
-        addSubview(cloudImage)
         
         cloudImage.snp.makeConstraints { make in
             make.centerX.equalTo(snp.centerX)
             make.centerY.equalTo(snp.centerY)
         }
-    }
-    
-    private func tempSetup() {
-        addSubview(temperatureLabel)
         
         temperatureLabel.snp.makeConstraints { make in
             make.right.equalToSuperview().inset(40)

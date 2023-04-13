@@ -65,6 +65,7 @@ class WeatherMainScreenVC: UIViewController {
         let imageView = UIImageView()
         imageView.contentMode = .redraw
         imageView.image = UIImage(named: "glow")
+        imageView.contentMode = .scaleAspectFit
         return imageView
     }()
     
@@ -85,83 +86,63 @@ class WeatherMainScreenVC: UIViewController {
         return button
     }()
     
-  
     
     //MARK: ViewDidLoad
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = UIColor(hexString: "#47BFDF")
-        
+        configView()
         setupViews()
     }
-}
-
-//MARK: Views setup
-extension WeatherMainScreenVC {
     
-    func setupViews() {
-        viewSetup()
-        locationLogoSetup()
-        cityNameSetup()
-        chevronSetup()
-        notificationSetup()
-        leftCurvedLineSetup()
-        rightCurvedLineSetup()
-        sunGlowSetup()
-        informationSetup()
-        weekWeatherButtonSetup()
-    }
-    
-    private func viewSetup() {
+    private func configView() {
         let gradient = CAGradientLayer()
         let startColor = UIColor(hexString: "#47BFDF")
         let endColor = UIColor(hexString: "#4A91FF")
         gradient.frame = view.bounds
         gradient.colors = [startColor.cgColor, endColor.cgColor]
-        
         view.layer.insertSublayer(gradient, at: 0)
     }
-        
-    func locationLogoSetup() {
+    
+    
+    //MARK: Views setup
+    func setupViews() {
         view.addSubview(locationLogo)
+        view.addSubview(cityName)
+        view.addSubview(chevron)
+        view.addSubview(notifications)
+        view.addSubview(leftCurvedLine)
+        view.addSubview(rightCurvedLine)
+        view.addSubview(sunGlow)
+        view.addSubview(informationView)
+        view.addSubview(weekWeatherButton)
+        view.addSubview(sunImage)
         
+        //Constraints
         locationLogo.snp.makeConstraints { make in
             make.top.equalTo(Constraints.MainWeatherScreen.LocationLogo.top)
             make.left.equalTo(Constraints.MainWeatherScreen.LocationLogo.left)
             make.height.equalTo(Constraints.MainWeatherScreen.LocationLogo.height)
             make.width.equalTo(Constraints.MainWeatherScreen.LocationLogo.width)
         }
-    }
-    
-    func cityNameSetup() {
-        view.addSubview(cityName)
         
         cityName.snp.makeConstraints { make in
             make.left.equalTo(locationLogo.snp.right).offset(Constraints.MainWeatherScreen.CityName.left)
             make.centerY.equalTo(locationLogo.snp.centerY)
         }
-    }
-    
-    func chevronSetup() {
-        view.addSubview(chevron)
         
         chevron.snp.makeConstraints { make in
             make.left.equalTo(cityName.snp.right).offset(Constraints.MainWeatherScreen.Chevron.left)
             make.centerY.equalTo(cityName.snp.centerY)
         }
-    }
-    
-    func notificationSetup() {
         
-        view.addSubview(notifications)
-        
+        //notifications
         notifications.snp.makeConstraints { make in
             make.right.equalTo(-Constraints.MainWeatherScreen.Notifications.viewRight)
             make.centerY.equalTo(locationLogo.snp.centerY)
             make.height.equalTo(Constraints.MainWeatherScreen.Notifications.viewHeigh)
             make.width.equalTo(Constraints.MainWeatherScreen.Notifications.viewWidth)
         }
-        
         
         notifications.addSubview(notificationsLogo)
         
@@ -178,10 +159,6 @@ extension WeatherMainScreenVC {
             make.top.equalTo(Constraints.MainWeatherScreen.Notifications.dotTop)
             make.left.equalTo(Constraints.MainWeatherScreen.Notifications.dotLeft)
         }
-    }
-    
-    func leftCurvedLineSetup() {
-        view.addSubview(leftCurvedLine)
         
         leftCurvedLine.snp.makeConstraints { make in
             make.left.equalToSuperview().offset(Constraints.MainWeatherScreen.LeftCurvedLine.left)
@@ -189,21 +166,12 @@ extension WeatherMainScreenVC {
             make.width.equalTo(Constraints.MainWeatherScreen.LeftCurvedLine.width)
             make.height.equalTo(Constraints.MainWeatherScreen.LeftCurvedLine.height)
         }
-    }
-    
-    func rightCurvedLineSetup() {
-        
-        view.addSubview(rightCurvedLine)
         
         rightCurvedLine.snp.makeConstraints { make in
             make.left.equalTo(Constraints.MainWeatherScreen.RightCurvedLine.left)
             make.top.equalTo(Constraints.MainWeatherScreen.RightCurvedLine.top)
             
         }
-    }
-    
-    func sunGlowSetup() {
-        view.addSubview(sunGlow)
         
         sunGlow.snp.makeConstraints { make in
             make.top.equalTo(Constraints.MainWeatherScreen.Sunglow.top)
@@ -211,19 +179,12 @@ extension WeatherMainScreenVC {
             make.width.height.equalTo(Constraints.MainWeatherScreen.Sunglow.height)
         }
         
-        sunGlow.contentMode = .scaleAspectFit
         
-        
-        view.addSubview(sunImage)
         sunImage.snp.makeConstraints { make in
             make.centerX.equalTo(sunGlow.snp.centerX)
             make.centerY.equalTo(sunGlow.snp.centerY)
             make.width.height.equalTo(Constraints.MainWeatherScreen.Sun.height)
         }
-    }
-    
-    func informationSetup() {
-        view.addSubview(informationView)
         
         informationView.snp.makeConstraints { make in
             make.top.equalTo(Constraints.MainWeatherScreen.Information.top)
@@ -231,10 +192,6 @@ extension WeatherMainScreenVC {
             make.right.equalTo(Constraints.MainWeatherScreen.Information.right)
             make.height.equalTo(Constraints.MainWeatherScreen.Information.height)
         }
-    }
-    
-    func weekWeatherButtonSetup() {
-        view.addSubview(weekWeatherButton)
         
         weekWeatherButton.snp.makeConstraints { make in
             make.left.equalTo(Constraints.MainWeatherScreen.Button.left)
@@ -243,6 +200,9 @@ extension WeatherMainScreenVC {
             make.bottom.equalTo(Constraints.MainWeatherScreen.Button.bottom)
         }
     }
+}
+
+extension WeatherMainScreenVC {
     
     @objc func weekScreenRoute() {
         let transition = CATransition()

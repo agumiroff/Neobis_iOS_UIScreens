@@ -20,7 +20,6 @@
 		C6270DA629E4CF28007B5FB4 /* SinglesData.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6270DA529E4CF28007B5FB4 /* SinglesData.swift */; };
 		C63F79AF29E045320055E2FE /* FontSizes.swift in Sources */ = {isa = PBXBuildFile; fileRef = C63F79AE29E045320055E2FE /* FontSizes.swift */; };
 		C63F79B129E05C6B0055E2FE /* WeatherWeekScreenVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C63F79B029E05C6B0055E2FE /* WeatherWeekScreenVC.swift */; };
-		C63F79B429E05D1F0055E2FE /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = C63F79B329E05D1F0055E2FE /* Router.swift */; };
 		C63F79B929E080F80055E2FE /* ShortInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C63F79B829E080F80055E2FE /* ShortInfoView.swift */; };
 		C63F79BB29E081140055E2FE /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = C63F79BA29E081140055E2FE /* Model.swift */; };
 		C63F79BD29E094040055E2FE /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C63F79BC29E094040055E2FE /* TableViewCell.swift */; };
@@ -36,6 +35,8 @@
 		C659A82629DD75A30020AD11 /* Neobis_iOS_UIScreensUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C659A82529DD75A30020AD11 /* Neobis_iOS_UIScreensUITests.swift */; };
 		C659A82829DD75A30020AD11 /* Neobis_iOS_UIScreensUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C659A82729DD75A30020AD11 /* Neobis_iOS_UIScreensUITestsLaunchTests.swift */; };
 		C659A83929DD76AD0020AD11 /* NavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C659A83829DD76AD0020AD11 /* NavigationController.swift */; };
+		C6D62D7E29E891DD00B33E9D /* UILabel+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6D62D7D29E891DD00B33E9D /* UILabel+Extension.swift */; };
+		C6D62D8129E898B100B33E9D /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6D62D8029E898B100B33E9D /* CustomButton.swift */; };
 		C6DFC81A29DEDB67008B072C /* StackView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6DFC81929DEDB67008B072C /* StackView+Extension.swift */; };
 		C6DFC83829DEE56F008B072C /* Overpass-Italic-VariableFont_wght.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C6DFC82129DEE56F008B072C /* Overpass-Italic-VariableFont_wght.ttf */; };
 		C6DFC83929DEE56F008B072C /* Overpass-ExtraLight.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C6DFC82329DEE56F008B072C /* Overpass-ExtraLight.ttf */; };
@@ -102,7 +103,6 @@
 		C6270DA529E4CF28007B5FB4 /* SinglesData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SinglesData.swift; sourceTree = "<group>"; };
 		C63F79AE29E045320055E2FE /* FontSizes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FontSizes.swift; sourceTree = "<group>"; };
 		C63F79B029E05C6B0055E2FE /* WeatherWeekScreenVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherWeekScreenVC.swift; sourceTree = "<group>"; };
-		C63F79B329E05D1F0055E2FE /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
 		C63F79B829E080F80055E2FE /* ShortInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShortInfoView.swift; sourceTree = "<group>"; };
 		C63F79BA29E081140055E2FE /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 		C63F79BC29E094040055E2FE /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
@@ -122,6 +122,8 @@
 		C659A82529DD75A30020AD11 /* Neobis_iOS_UIScreensUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Neobis_iOS_UIScreensUITests.swift; sourceTree = "<group>"; };
 		C659A82729DD75A30020AD11 /* Neobis_iOS_UIScreensUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Neobis_iOS_UIScreensUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		C659A83829DD76AD0020AD11 /* NavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationController.swift; sourceTree = "<group>"; };
+		C6D62D7D29E891DD00B33E9D /* UILabel+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UILabel+Extension.swift"; sourceTree = "<group>"; };
+		C6D62D8029E898B100B33E9D /* CustomButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
 		C6DFC81929DEDB67008B072C /* StackView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "StackView+Extension.swift"; sourceTree = "<group>"; };
 		C6DFC82129DEE56F008B072C /* Overpass-Italic-VariableFont_wght.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Overpass-Italic-VariableFont_wght.ttf"; sourceTree = "<group>"; };
 		C6DFC82329DEE56F008B072C /* Overpass-ExtraLight.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Overpass-ExtraLight.ttf"; sourceTree = "<group>"; };
@@ -258,14 +260,6 @@
 			path = Singles;
 			sourceTree = "<group>";
 		};
-		C63F79B229E05D180055E2FE /* Router */ = {
-			isa = PBXGroup;
-			children = (
-				C63F79B329E05D1F0055E2FE /* Router.swift */,
-			);
-			path = Router;
-			sourceTree = "<group>";
-		};
 		C63F79B529E080B30055E2FE /* MainScreen */ = {
 			isa = PBXGroup;
 			children = (
@@ -288,6 +282,7 @@
 		C63F79BE29E188D80055E2FE /* Weather */ = {
 			isa = PBXGroup;
 			children = (
+				C6D62D7F29E898A500B33E9D /* Custom */,
 				C659A83529DD75F50020AD11 /* Screens */,
 			);
 			path = Weather;
@@ -329,7 +324,6 @@
 		C659A80329DD75A20020AD11 /* Neobis_iOS_UIScreens */ = {
 			isa = PBXGroup;
 			children = (
-				C63F79B229E05D180055E2FE /* Router */,
 				C6DFC81329DDE4F4008B072C /* UI */,
 				C606298E29E43C1C009E8A4E /* Helpers */,
 				C659A83729DD76A30020AD11 /* Navigation */,
@@ -392,6 +386,14 @@
 			path = Navigation;
 			sourceTree = "<group>";
 		};
+		C6D62D7F29E898A500B33E9D /* Custom */ = {
+			isa = PBXGroup;
+			children = (
+				C6D62D8029E898B100B33E9D /* CustomButton.swift */,
+			);
+			path = Custom;
+			sourceTree = "<group>";
+		};
 		C6DFC81329DDE4F4008B072C /* UI */ = {
 			isa = PBXGroup;
 			children = (
@@ -407,6 +409,7 @@
 		C6DFC81729DEDB4C008B072C /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				C6D62D7D29E891DD00B33E9D /* UILabel+Extension.swift */,
 				C6DFC81929DEDB67008B072C /* StackView+Extension.swift */,
 				C6DFC84F29DEED17008B072C /* UIColor+Extension.swift */,
 				C606299529E43E07009E8A4E /* View+Extension.swift */,
@@ -719,9 +722,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C63F79B429E05D1F0055E2FE /* Router.swift in Sources */,
 				C63F79B929E080F80055E2FE /* ShortInfoView.swift in Sources */,
 				C63F79C529E189890055E2FE /* CryptoMainScreenVC.swift in Sources */,
+				C6D62D8129E898B100B33E9D /* CustomButton.swift in Sources */,
 				C6270DA029E4C11B007B5FB4 /* TravelModel.swift in Sources */,
 				C606299629E43E07009E8A4E /* View+Extension.swift in Sources */,
 				C606299A29E44F3C009E8A4E /* FinanceModel.swift in Sources */,
@@ -744,6 +747,7 @@
 				C659A80729DD75A20020AD11 /* SceneDelegate.swift in Sources */,
 				C6DFC81A29DEDB67008B072C /* StackView+Extension.swift in Sources */,
 				C606299329E43DAE009E8A4E /* FinanceMainScreen.swift in Sources */,
+				C6D62D7E29E891DD00B33E9D /* UILabel+Extension.swift in Sources */,
 				C6270DA429E4C4D7007B5FB4 /* SinglesScreen.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -9,7 +9,7 @@ import Foundation
 import UIKit
 
 class ShortInfoView: UIView {
-   
+    
     let cloudImage: UIImageView = {
         let imageView = UIImageView()
         return imageView
@@ -60,33 +60,21 @@ class ShortInfoView: UIView {
     }
     
     private func setupViews() {
-        temperatureSetup()
-        starSetup()
-        cloudSetup()
-        timeSetup()
-    }
-    
-    private func temperatureSetup() {
         addSubview(temperatureLabel)
+        addSubview(starImage)
+        addSubview(cloudImage)
+        addSubview(timeLabel)
         
         temperatureLabel.snp.makeConstraints { make in
             make.top.equalTo(Constraints.WeekScreen.TemperatureLabel.top)
             make.centerX.equalTo(snp.centerX)
         }
-    }
-    
-    private func starSetup() {
-        addSubview(starImage)
         
         starImage.snp.makeConstraints { make in
             make.centerY.equalTo(snp.centerY).offset(Constraints.WeekScreen.StarImage.vertical)
             make.centerX.equalTo(snp.centerX).offset(Constraints.WeekScreen.StarImage.horizontal)
             make.height.width.equalTo(Constraints.WeekScreen.StarImage.width)
         }
-    }
-    
-    private func cloudSetup() {
-        addSubview(cloudImage)
         
         cloudImage.snp.makeConstraints { make in
             make.centerY.equalTo(snp.centerY)
@@ -94,10 +82,6 @@ class ShortInfoView: UIView {
             make.width.equalTo(Constraints.WeekScreen.CloudImage.width)
             make.height.equalTo(Constraints.WeekScreen.CloudImage.height)
         }
-    }
-    
-    private func timeSetup() {
-        addSubview(timeLabel)
         
         timeLabel.snp.makeConstraints { make in
             make.bottom.equalTo(Constraints.WeekScreen.TimeLabel.bottom)
